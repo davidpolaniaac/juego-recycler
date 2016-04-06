@@ -19,7 +19,10 @@
 
         	<div id="bolsa" >
                 <div id="Puntaje">Puntaje : </div>
-                
+                <button id="intrucciones">Instrucciones</button>
+                <button id="puntajesHist">Puntajes</button>
+                <button id="creditos">Creditos</button>
+
                 <!-- Se generar los div aleatorios  -->
 
             </div>
@@ -32,9 +35,29 @@
 
         </div>
 
-        <dialog id="ok"> <p id="mensaje">Game Over !</p>
-         <button id="btnclose">Clic para reiniciar</button> 
-        </dialog> 
+         <dialog id="ok">
+            <h3><p id="mensaje">Game Over !</p></h3>
+            <p>Reciclar es una de las actividades cotidianas más sencillas y gratificantes.!</p>
+            <button id="btnclose">Clic para reiniciar</button>
+        </dialog>
+
+        <dialog id="windowInt">
+            <h3>Instrucciones!</h3>
+            <p>Reciclar los elementos en los contenedores correspondientes.
+                Arrastrar los elementos o seleccionando el elemnto y su contenedor correspondiente. Para ganar deber realizar 10 intentos perfectos, numero de intentos 10!</p>
+            <button id="exitInt">Exit</button>
+        </dialog>
+        <dialog id="windowCredi">
+            <h3>Creditos!</h3>
+            <p>David Polania</p>
+            <button id="exitCre">Exit</button>
+        </dialog>
+
+        <dialog id="windowPuntajes">
+            <h3>Puntajes!</h3>
+            <p id="puntajesFinales">Puntajes Buenas.!</p>
+            <button id="exitPuntajes">Exit</button>
+        </dialog>
 
     </body>
 </html>
