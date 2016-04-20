@@ -1,0 +1,351 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,body {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.pagina {
+
+    width:100%;
+    height:100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+.padre {
+  /* IMPORTANTE */
+    text-align: center;
+    height:50%;
+
+}
+
+.hijo {
+  width:30%;
+  height:100%;
+  display: inline-block;
+
+}
+
+#bolsa {
+
+    background-image: url('../img/nube.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:50%;
+    width:98%;
+    margin: 0 auto  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verde{
+    background-image: url('../img/canecaVerde.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+#azul{
+    background-image: url('../img/canecaAzul.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#gris{
+    background-image: url('../img/canecaGris.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.cuadradito {
+    background: #288;
+    border: 2px solid #882;
+    width: 10%;
+    height: 10%;
+    padding: 0 10px 15px;
+    margin: 5px;
+    display: inline-block;
+    cursor: move;
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 60%; 
+    right: 0;
+
+}
+
+.arrastrable1 {
+  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+}
+
+.arrastrable2 {
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.arrastrable3 {
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Puntaje{
+    
+    position: absolute;
+    width:30%;
+    height:10%;
+    margin-left: 0;
+    margin-right: auto;
+    top: 20%;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: fantasy ;
+    font-size: 180%;
+
+}
+
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#intrucciones {
+    
+    position: absolute;
+    margin-left: auto;
+    margin-right: 0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#puntajesHist {
+    
+    position: absolute;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    left:0;
+    right:0;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top:30px;
+}
+
+#creditos {
+    
+    position: absolute;
+    margin-left: auto;
+    margin-right: 0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

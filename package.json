@@ -1,0 +1,22 @@
+{
+  "name": "juegorecycler",
+  "version": "1.0.0",
+  "description": "drag drop",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://DavidPolania@bitbucket.org/DavidPolania/juegorecycler.git"
+  },
+  "author": "David",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/DavidPolania/juegorecycler#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.1"
+  }
+}
